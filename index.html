@@ -44,7 +44,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Whitenails 2018 Tour Blog — First Trip, day by day</title>
+<title>WhiteNails 2018 Tour Blog — First Trip, Day by Day</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
 
 
@@ -137,11 +137,17 @@ Error message and password prompt
 
 <li>$:/config/DefaultSidebarTab</li>
 
+<li>$:/config/Navigation/UpdateAddressBar</li>
+
+<li>$:/config/Navigation/UpdateHistory</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/storyview</li>
 
 <li>$:/config/peek-stylesheets/mode/--994748944</li>
+
+<li>$:/config/RelinkOnRename</li>
 
 <li>$:/config/TextEditor/EnableToolbar</li>
 
@@ -169,6 +175,8 @@ Error message and password prompt
 
 <li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.17/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.17/index.html/$:/plugins/tiddlywiki/savetrail</li>
 
+<li>$:/state/image-picker/system--2033944505</li>
+
 <li>$:/state/ShowPaletteEditor</li>
 
 <li>$:/state/sidebar</li>
@@ -190,6 +198,10 @@ Error message and password prompt
 <li>$:/state/tab/moresidebar-401116514</li>
 
 <li>$:/state/tab/sidebar--1835078512</li>
+
+<li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
+
+<li>$:/state/tree/$:/language/</li>
 
 <li>$:/status/UserName</li>
 
@@ -401,9 +413,9 @@ Error message and password prompt
 
 <li>$:/view</li>
 
-<li>First Test</li>
+<li>Max is a Mermaid</li>
 
-<li>Second Article</li>
+<li>The Begginings</li>
 
 </ul>
 </p>
@@ -421,6 +433,12 @@ Error message and password prompt
 <div created="20180718030435098" creator="Vincent Bernard" modified="20180718030435098" modifier="Vincent Bernard" title="$:/config/DefaultSidebarTab">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
+<div created="20180719031606203" creator="Vincent Bernard" modified="20180719031606203" modifier="Vincent Bernard" title="$:/config/Navigation/UpdateAddressBar">
+<pre>permalink</pre>
+</div>
+<div created="20180719031611079" creator="Vincent Bernard" modified="20180719031611079" modifier="Vincent Bernard" title="$:/config/Navigation/UpdateHistory">
+<pre>yes</pre>
+</div>
 <div created="20180718025247647" modified="20180718025249745" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel">
 <pre>show</pre>
 </div>
@@ -430,7 +448,10 @@ Error message and password prompt
 <div created="20180718025504860" creator="Vincent Bernard" modified="20180718025504861" modifier="Vincent Bernard" title="$:/config/peek-stylesheets/mode/--994748944">
 <pre>expanded</pre>
 </div>
-<div created="20180718030447020" creator="Vincent Bernard" modified="20180718030451050" modifier="Vincent Bernard" title="$:/config/TextEditor/EnableToolbar">
+<div created="20180719025750733" creator="Vincent Bernard" modified="20180719025750733" modifier="Vincent Bernard" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
+</div>
+<div created="20180718030447020" creator="Vincent Bernard" modified="20180719031548611" modifier="Vincent Bernard" title="$:/config/TextEditor/EnableToolbar">
 <pre>yes</pre>
 </div>
 <div created="20180718030517344" creator="Vincent Bernard" modified="20180718030523928" modifier="Vincent Bernard" title="$:/config/Toolbar/ButtonClass">
@@ -8979,12 +9000,48 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20180718031044184" creator="Vincent Bernard" modified="20180718032427800" modifier="Vincent Bernard" tags="$:/tags/Stylesheet" title="$:/CSS">
-<pre>body .tc-tiddler-frame {
+<div created="20180718031044184" creator="Vincent Bernard" modified="20180719033056569" modifier="Vincent Bernard" tags="$:/tags/Stylesheet" title="$:/CSS" type="text/css">
+<pre>/* WhiteNails Blog 2018 -  CSS Modifications */
+/* Strip Out Options 
+.tc-page-controls,
+.tc-sidebar-lists{
+    display:none;
+} 
+*/
+
+/* Overall Blog Design */
+body .tc-tiddler-frame,
+code, pre {
 	background: rgb(55,55,55);
 }
-body.tc-body{
-    color: white
+
+body .tc-site-title{
+font-size: 35pt;
+}
+
+body.tc-body,
+select{
+    color: white;
+    background-color: rgb(55,55,55)
+}
+
+.tc-site-title,
+.tc-sidebar-header {
+    color: pink
+}
+
+/* Tiddler Design */
+
+.tc-tiddler-frame{
+    border: none;
+}
+
+.tc-title{
+     color: white;
+}
+
+.tc-tiddler-body p{
+    font-size: 14pt;
 }</pre>
 </div>
 <div created="20180718024942027" creator="Vincent Bernard" modified="20180718030318698" modifier="Vincent Bernard" title="$:/DefaultTiddlers">
@@ -8996,52 +9053,61 @@ body.tc-body{
 <div created="20180718025355687" creator="Vincent Bernard" modified="20180718025600230" modifier="Vincent Bernard" title="$:/palette">
 <pre>$:/palettes/Rocker</pre>
 </div>
-<div created="20180718025001376" modified="20180718025012653" title="$:/SiteSubtitle">
-<pre>First Trip, day by day</pre>
+<div created="20180718025001376" creator="Vincent Bernard" modified="20180719032645996" modifier="Vincent Bernard" title="$:/SiteSubtitle">
+<pre>First Trip, Day by Day</pre>
 </div>
-<div created="20180718024922668" modified="20180718025051937" title="$:/SiteTitle">
-<pre>Whitenails 2018 Tour Blog</pre>
+<div created="20180718024922668" creator="Vincent Bernard" modified="20180719031413363" modifier="Vincent Bernard" title="$:/SiteTitle">
+<pre>WhiteNails 2018 Tour Blog</pre>
 </div>
 <div created="20180718031825729" creator="Vincent Bernard" modified="20180718031827536" modifier="Vincent Bernard" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.17/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.17/index.html/$:/plugins/tiddlywiki/savetrail">
 <pre>no</pre>
 </div>
+<div created="20180719030030642" creator="Vincent Bernard" modified="20180719030031340" modifier="Vincent Bernard" title="$:/state/image-picker/system--2033944505">
+<pre>hide</pre>
+</div>
 <div created="20180718025533827" creator="Vincent Bernard" modified="20180718025533827" modifier="Vincent Bernard" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20180718030003586" creator="Vincent Bernard" modified="20180718030004094" modifier="Vincent Bernard" title="$:/state/sidebar">
+<div created="20180718030003586" creator="Vincent Bernard" modified="20180719034217778" modifier="Vincent Bernard" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20180718025029121" creator="Vincent Bernard" modified="20180718031816617" modifier="Vincent Bernard" title="$:/state/tab--1963855381">
-<pre>$:/core/ui/ControlPanel/Palette</pre>
+<div created="20180718025029121" creator="Vincent Bernard" modified="20180719031442727" modifier="Vincent Bernard" title="$:/state/tab--1963855381">
+<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
-<div created="20180718025019988" creator="Vincent Bernard" modified="20180718031803172" modifier="Vincent Bernard" title="$:/state/tab--2112689675">
-<pre>$:/core/ui/ControlPanel/Advanced</pre>
+<div created="20180718025019988" creator="Vincent Bernard" modified="20180719032639952" modifier="Vincent Bernard" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
 <div created="20180718030602650" creator="Vincent Bernard" modified="20180718031848079" modifier="Vincent Bernard" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
 </div>
-<div created="20180718025022932" creator="Vincent Bernard" modified="20180718031810180" modifier="Vincent Bernard" title="$:/state/tab--959111941">
-<pre>$:/core/ui/ControlPanel/EditorTypes</pre>
+<div created="20180718025022932" creator="Vincent Bernard" modified="20180719031435009" modifier="Vincent Bernard" title="$:/state/tab--959111941">
+<pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
 </div>
 <div created="20180718030608077" creator="Vincent Bernard" modified="20180718030621414" modifier="Vincent Bernard" title="$:/state/tab-1342078386">
 <pre>$:/core/ui/ControlPanel/Plugins/Add/Plugins</pre>
 </div>
-<div created="20180718025026680" creator="Vincent Bernard" modified="20180718031818541" modifier="Vincent Bernard" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Plugins</pre>
+<div created="20180718025026680" creator="Vincent Bernard" modified="20180719032637119" modifier="Vincent Bernard" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20180718030558933" creator="Vincent Bernard" modified="20180718030558933" modifier="Vincent Bernard" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/DownloadSaver</pre>
 </div>
-<div created="20180718030215335" creator="Vincent Bernard" modified="20180718032500317" modifier="Vincent Bernard" title="$:/state/tab/moresidebar-401116514">
+<div created="20180718030215335" creator="Vincent Bernard" modified="20180719034428145" modifier="Vincent Bernard" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20180718025111514" creator="Vincent Bernard" modified="20180718033138591" modifier="Vincent Bernard" title="$:/state/tab/sidebar--1835078512">
+<div created="20180718025111514" creator="Vincent Bernard" modified="20180719034619649" modifier="Vincent Bernard" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Recent</pre>
+</div>
+<div created="20180719031227393" creator="Vincent Bernard" modified="20180719031235437" modifier="Vincent Bernard" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
+</div>
+<div created="20180719034423937" creator="Vincent Bernard" modified="20180719034424881" modifier="Vincent Bernard" title="$:/state/tree/$:/language/">
+<pre>hide</pre>
 </div>
 <div created="20180718025424665" creator="V" modified="20180718025430922" modifier="Vincent Bernar" title="$:/status/UserName">
 <pre>Vincent Bernard</pre>
 </div>
-<div list="[[Second Article]] [[First Test]]" title="$:/StoryList">
+<div list="[[Max is a Mermaid]] [[The Begginings]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9057,7 +9123,7 @@ body.tc-body{
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///Users/vbernard/Downloads/wn%20(1).html&quot;
+            &quot;text&quot;: &quot;file:///Users/vbernard/Downloads/wnBlog%20(1).html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9077,7 +9143,7 @@ body.tc-body{
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/Users/vbernard/Downloads/wn%20(1).html&quot;
+            &quot;text&quot;: &quot;/Users/vbernard/Downloads/wnBlog%20(1).html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9750,7 +9816,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20180718030607060" creator="Vincent Bernard" dependents="" description="Basic theme" modified="20180718030607060" modifier="Vincent Bernard" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" server-url="https://tiddlywiki.com/library/v5.1.17/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.17/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.17">
 <pre></pre>
 </div>
-<div created="20180718032333169" creator="Vincent Bernard" modified="20180718032334962" modifier="Vincent Bernard" title="$:/temp/search">
+<div created="20180718032333169" creator="Vincent Bernard" modified="20180719034235179" modifier="Vincent Bernard" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20180718030607017" creator="Vincent Bernard" modified="20180718030607017" modifier="Vincent Bernard" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.17/index.html" url="https://tiddlywiki.com/library/v5.1.17/index.html">
@@ -9871,11 +9937,11 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20180718030840579" creator="Vincent Bernard" modified="20180718030847891" modifier="Vincent Bernard" title="$:/themes/tiddlywiki/vanilla/metrics/bodylineheight">
 <pre>22px</pre>
 </div>
-<div created="20180718030742180" creator="Vincent Bernard" modified="20180718030804132" modifier="Vincent Bernard" title="$:/themes/tiddlywiki/vanilla/metrics/fontsize">
-<pre>17pt</pre>
+<div created="20180718030742180" creator="Vincent Bernard" modified="20180719031244874" modifier="Vincent Bernard" title="$:/themes/tiddlywiki/vanilla/metrics/fontsize">
+<pre>12pt</pre>
 </div>
-<div created="20180718030808771" creator="Vincent Bernard" modified="20180718030816636" modifier="Vincent Bernard" title="$:/themes/tiddlywiki/vanilla/metrics/lineheight">
-<pre>22pt</pre>
+<div created="20180718030808771" creator="Vincent Bernard" modified="20180719031252237" modifier="Vincent Bernard" title="$:/themes/tiddlywiki/vanilla/metrics/lineheight">
+<pre>13pt</pre>
 </div>
 <div created="20180718030936591" creator="Vincent Bernard" modified="20180718030940025" modifier="Vincent Bernard" title="$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth">
 <pre>350px</pre>
@@ -9895,11 +9961,15 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20180718025604415" creator="Vincent Bernard" modified="20180718030258680" modifier="Vincent Bernard" title="$:/view">
 <pre>classic</pre>
 </div>
-<div created="20180718025117912" modified="20180718025227978" tags="" title="First Test">
-<pre>White we are finalizing the last details of our trip, I had that idea to create a blog to keep track of the best (and worst) moment of the tour. This tool.</pre>
+<div created="20180719032803410" creator="Vincent Bernard" modified="20180719032830462" modifier="Vincent Bernard" tags="" title="Max is a Mermaid">
+<pre>Suspendisse accumsan bibendum sem ac vulputate. Nam porttitor urna lorem, id laoreet turpis rhoncus in. Vestibulum vel ullamcorper arcu. Nam viverra porta sem et egestas. Praesent nibh purus, convallis nec tellus non, tempor posuere urna. Vivamus luctus ipsum ipsum, vitae fringilla turpis euismod et. Morbi mollis diam vitae neque consequat, nec egestas lacus tincidunt. Morbi cursus viverra purus, ultricies imperdiet nunc elementum nec. Pellentesque quis nunc a nisl tempor sodales. Cras luctus ante quis ante tincidunt, nec vehicula nulla vestibulum. Phasellus gravida lorem eu iaculis vehicula. Cras auctor commodo neque sit amet luctus. Pellentesque in ex odio. Pellentesque lacinia nulla purus, a porta lacus venenatis a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi accumsan suscipit orci vitae iaculis.
+
+</pre>
 </div>
-<div created="20180718025230382" modified="20180718025238956" tags="" title="Second Article">
-<pre>Just for fun</pre>
+<div created="20180718025117912" creator="Vincent Bernard" modified="20180719032438192" modifier="Vincent Bernard" tags="" title="The Begginings" type="text/vnd.tiddlywiki">
+<pre>&lt;p&gt;While finalizing the last details of our trip, I had that idea to create a blog to keep track of the best (and worst) moment of the tour. Here's the architecture behind the blog for the few geeks out there.&lt;/p&gt;
+&lt;img src=&quot;https://github.com/VincentBern/WhiteNailsTourBlog/raw/master/37150892_10160598542585324_8607276767998115840_o.jpg&quot; /&gt;
+</pre>
 </div>
 
 </div>
