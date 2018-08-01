@@ -9009,35 +9009,13 @@ Error message and password prompt
 }</pre>
 </div>
 <div created="20180718031044184" creator="Vincent Bernard" modified="20180719033056569" modifier="Vincent Bernard" tags="$:/tags/Stylesheet" title="$:/CSS" type="text/css">
-<pre>/* WhiteNails Blog 2018 -  CSS Modifications */
+<pre>/* WhiteNails Blog 2018 -  CSS Modifications - WNMODZ */
 /* Strip Out Options */
 .tc-page-controls,
 .tc-tiddler-controls,
 .tc-sidebar-lists{
     display:none;
 } 
-
-body .tc-site-title{
-    background: url('white_transp_WN_icon.png');
-    background-repeat: no-repeat;
-    background-size: 150px 220px;
-    background-position: center top 130px; 
-    height: 350px;
-    text-align: center;
-    color:white;
-}
-
-.wnExternalLinks{
-    margin: 20px;
-    padding: 20px;
-    color: gray;
-    font-size: 20pt;
-    text-align: center;
-}
-
-.tc-tiddlylink.tc-tiddlylink-missing{
-    display:none;
-}
 
 /* Overall Blog Design */
 body .tc-tiddler-frame,
@@ -9046,7 +9024,22 @@ code, pre {
 }
 
 body .tc-site-title{
-font-size: 35pt;
+    background: url('white_transp_WN_icon.png');
+    background-repeat: no-repeat;
+    background-size: 150px 220px;
+    background-position: center top 130px; 
+    height: 350px;
+    color:white;
+    text-align: center;
+}
+
+body .tc-site-title{
+    font-size: 35pt;
+}
+
+.wnExternalLinksSection{
+    width: 100%;
+    text-align: center;
 }
 
 body.tc-body,
@@ -9070,6 +9063,16 @@ select{
      color: white;
      text-align: center;
 }
+.wnExternalLinks {
+    color: gray;
+    font-size: 20pt;
+    line-height: 30pt;
+    margin: 20px;
+}
+
+.tc-tiddlylink.tc-tiddlylink-missing{
+    display:none;
+}
 
 .tc-tiddler-body p{
     font-size: 14pt;
@@ -9086,10 +9089,11 @@ select{
 </div>
 <div created="20180718025001376" creator="Vincent Bernard" modified="20180719032645996" modifier="Vincent Bernard" title="$:/SiteSubtitle">
 <pre>        &lt;!-- &lt;img src=&quot;white_transp_WN_icon.png&quot; style=&quot;width:200px&quot;&gt; &lt;br/&gt; --&gt;
+    <div class="wnExternalLinksSection">
         &lt;a class=&quot;wnExternalLinks&quot; href=&quot;https://whitenails.bandcamp.com/releases&quot;&gt;Bandcamp&lt;/a&gt;
         &lt;a class=&quot;wnExternalLinks&quot; href=&quot;https://www.facebook.com/WhiteNailsMusic/&quot;&gt;Facebook&lt;/a&gt;
         &lt;a class=&quot;wnExternalLinks&quot; href=&quot;https://www.instagram.com/whitenailsband/&quot;&gt;Instagram&lt;/a&gt;
-        
+    </div>
     </pre>
 </div>
 <div created="20180718024922668" creator="Vincent Bernard" modified="20180719031413363" modifier="Vincent Bernard" title="$:/SiteTitle">
