@@ -1,0 +1,25 @@
+body{
+    color: white;
+}
+
+.container-fluid{
+    padding: 0px 40px 0px 40px;
+}
+
+h1, .wnExternalLinksSection{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.wnExternalLinksSection a{
+    margin: 20px;
+    font-size: 20pt;
+    color: gray;
+}
+
+.article img {
+    width: 90%;
+}
