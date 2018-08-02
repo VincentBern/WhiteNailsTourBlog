@@ -1,7 +1,7 @@
 body{
     color: rgb(180,180,180);
     background-color: rgb(29,25,26);
-    font-family: 'Amiri', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container-fluid{
@@ -45,6 +45,7 @@ h5 {
 
 h1,h2, h3, h5, .wnExternalLinksSection{
     text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
 .wnExternalLinksSection a{
