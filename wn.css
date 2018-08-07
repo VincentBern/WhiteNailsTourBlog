@@ -1,3 +1,5 @@
+/* General Styling */
+
 body{
     color: rgb(180,180,180);
     background-color: rgb(29,25,26);
@@ -33,6 +35,9 @@ body{
     margin: 50px;
 }
 
+/* Text */
+
+
 .yellow{
     color: rgb(168,129,93);
 }
@@ -46,6 +51,10 @@ h5 {
 h1,h2, h3, h5, .wnExternalLinksSection{
     text-align: center;
     font-family: 'Merriweather', serif;
+}
+
+a{
+    color: rgb(168,129,93);
 }
 
 .wnExternalLinksSection a{
