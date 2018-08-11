@@ -13,6 +13,10 @@ body{
 .article{
     text-align: center;
     font-size: 13pt;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .spacer{
@@ -65,7 +69,7 @@ a{
 
 .article img {
     width: auto;
-    max-width: 100%;
+    max-width: 90%;
     max-height: 800px;
     margin-left: auto;
     margin-right: auto;
